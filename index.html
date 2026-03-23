@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Negra Boutique — Colección</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Josefin+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- HERO -->
+<header>
+  <canvas id="particles"></canvas>
+  <img src="logo.png" alt="La Negra Boutique" class="hero-logo">
+  <h1 class="hero-title">
+    La Negra Boutique
+  </h1>
+  <p class="hero-sub">Elegancia · Comodidad · Estilo</p>
+</header>
+
+<!-- CATALOG -->
+<section>
+  <div class="section-header">
+    <p class="section-eyebrow">Nuestra selección</p>
+    <h2 class="section-title">Catálogo de Productos</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <!-- FILTERS -->
+  <div class="filter-bar">
+    <button class="filter-btn active" onclick="filter('all', this)">Todos</button>
+    <button class="filter-btn" onclick="filter('tanga', this)">Tanga</button>
+    <button class="filter-btn" onclick="filter('hipster', this)">Hipster</button>
+    <button class="filter-btn" onclick="filter('brasilera', this)">Brasilera</button>
+    <button class="filter-btn" onclick="filter('boxer', this)">Boxer</button>
+    <button class="filter-btn" onclick="filter('moldeador', this)">Moldeador</button>
+  </div>
+
+  <!-- Las tarjetas las genera app.js -->
+  <div class="catalog" id="catalog"></div>
+
+</section>
+
+<footer>
+  <div class="footer-logo">La Negra Boutique</div>
+  <p class="footer-sub">La Negra Boutique · Est. 2026</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
