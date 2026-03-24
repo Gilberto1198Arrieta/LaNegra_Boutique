@@ -141,7 +141,7 @@ header > * {
 
 .hero-logo {
   width: clamp(260px, 38vw, 480px);
-  margin-bottom: 2.5rem;
+  margin-bottom: -9.5rem;
   opacity: 0;
   animation: fadeUp 1.2s 0.4s forwards, logoGlow 4s 1.8s ease-in-out infinite alternate;
   filter:
